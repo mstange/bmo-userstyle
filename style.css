@@ -435,6 +435,15 @@
     white-space: nowrap;
   }
   
+  #user-story {
+    padding: 10px;
+    background: white;
+  }
+  #user-story-actions {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
   #attachments {
     background: white;
     margin: 5px 0;
@@ -781,7 +790,7 @@
     background-color: #57bd35 !important;
   }
   #enter_bug.bz_common_actions::before {
-    background-image: url(https://firefoxux.github.io/firefox-svg-icons/icons/alert/notification.svg);
+    background-image: url(https://firefoxux.github.io/firefox-svg-icons/icons/permissions/notifications.svg);
   }
   #query.bz_common_actions {
     background-color: #ea385e !important;
@@ -793,7 +802,7 @@
     background-color: #858585 !important;
   }
   #account.bz_common_actions::before {
-    background-image: url(https://firefoxux.github.io/firefox-svg-icons/icons/places/settings.svg)
+    background-image: url(https://firefoxux.github.io/firefox-svg-icons/icons/general/settings.svg)
   }
   
   #footer {
@@ -855,7 +864,8 @@
     line-height: 1.3;
   }
   
-  .bz_buglist {
+  .bz_buglist,
+  table.file_table /* this is not just .file_table because bugzilla's stylesheet has table.file_table { width: 100%; } */ {
     margin: 10px calc(50% - 50vw);
     width: 100vw;
   }
